@@ -1,0 +1,57 @@
+file,label,tag
+ben_plain_00.eml,0,ordinary
+ben_plain_01.eml,0,ordinary
+ben_plain_02.eml,0,ordinary
+ben_plain_03.eml,0,ordinary
+ben_plain_04.eml,0,ordinary
+ben_plain_05.eml,0,ordinary
+ben_plain_06.eml,0,ordinary
+ben_plain_07.eml,0,ordinary
+ben_plain_08.eml,0,ordinary
+ben_plain_09.eml,0,ordinary
+ben_plain_10.eml,0,ordinary
+ben_plain_11.eml,0,ordinary
+ben_hard_reset_0.eml,0,hard-negative: legit password reset
+ben_hard_reset_1.eml,0,hard-negative: legit password reset
+ben_hard_reset_2.eml,0,hard-negative: legit password reset
+ben_hard_esp_0.eml,0,hard-negative: billing via mail platform
+ben_hard_esp_1.eml,0,hard-negative: billing via mail platform
+ben_hard_esp_2.eml,0,hard-negative: billing via mail platform
+ben_hard_esp_3.eml,0,hard-negative: billing via mail platform
+ben_hard_fwd_0.eml,0,hard-negative: forwarded mail failing SPF/DKIM
+ben_hard_fwd_1.eml,0,hard-negative: forwarded mail failing SPF/DKIM
+ben_hard_fwd_2.eml,0,hard-negative: forwarded mail failing SPF/DKIM
+ben_hard_att_0.eml,0,hard-negative: macro/zip attachments from colleague
+ben_hard_att_1.eml,0,hard-negative: macro/zip attachments from colleague
+ben_hard_att_2.eml,0,hard-negative: macro/zip attachments from colleague
+ben_hard_short.eml,0,hard-negative: shortener link
+ben_hard_noauth.eml,0,hard-negative: exported without auth headers
+mal_lookalike_0.eml,1,easy: lookalike domain phish
+mal_lookalike_1.eml,1,easy: lookalike domain phish
+mal_lookalike_2.eml,1,easy: lookalike domain phish
+mal_lookalike_3.eml,1,easy: lookalike domain phish
+mal_lookalike_4.eml,1,easy: lookalike domain phish
+mal_lookalike_5.eml,1,easy: lookalike domain phish
+mal_ip_0.eml,1,easy: IP-address link
+mal_ip_1.eml,1,easy: IP-address link
+mal_ip_2.eml,1,easy: IP-address link
+mal_exe_0.eml,1,easy: double-extension executable
+mal_exe_1.eml,1,easy: double-extension executable
+mal_exe_2.eml,1,easy: double-extension executable
+mal_disguised_0.eml,1,medium: executable disguised as PDF
+mal_disguised_1.eml,1,medium: executable disguised as PDF
+mal_mismatch_0.eml,1,"medium: mismatched link text, clean auth"
+mal_mismatch_1.eml,1,"medium: mismatched link text, clean auth"
+mal_mismatch_2.eml,1,"medium: mismatched link text, clean auth"
+mal_mismatch_3.eml,1,"medium: mismatched link text, clean auth"
+mal_replyto_0.eml,1,medium: reply-to hijack with urgency
+mal_replyto_1.eml,1,medium: reply-to hijack with urgency
+mal_replyto_2.eml,1,medium: reply-to hijack with urgency
+mal_macro_0.eml,1,medium: macro document with pressure
+mal_macro_1.eml,1,medium: macro document with pressure
+mal_hard_giftcard.eml,1,"hard-positive: BEC gift card, no links"
+mal_hard_cleanlink.eml,1,"hard-positive: compromised account, clean link"
+mal_hard_https_verify.eml,1,"hard-positive: new domain, HTTPS, calm wording"
+mal_hard_callback.eml,1,"hard-positive: callback phishing, no link"
+mal_hard_qr.eml,1,hard-positive: QR-code image only
+mal_hard_zip_pw.eml,1,hard-positive: password-protected archive

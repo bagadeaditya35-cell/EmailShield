@@ -1,0 +1,5 @@
+# Only needed to RUN the native window or BUILD the executable (not for the browser/CLI version)
+pyinstaller>=6.6
+pywebview>=5.0
+# optional: store secrets in the Windows Credential Manager instead of a file
+keyring>=24

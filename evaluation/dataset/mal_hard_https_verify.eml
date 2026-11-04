@@ -1,0 +1,12 @@
+From: Support <support@account-services.example.net>
+To: user@example.org
+Subject: Please verify your account
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <mal_hard_https_verify@synthetic.test>
+Authentication-Results: mx.example.net; spf=pass; dkim=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+We are updating records. Please verify your account at https://account-servic=
+es.example.net/verify

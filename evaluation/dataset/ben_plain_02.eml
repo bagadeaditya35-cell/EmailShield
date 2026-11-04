@@ -1,0 +1,11 @@
+From: Meera <meera@fabrikam-edu.example.org>
+To: user@example.org
+Subject: Your order has shipped
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <ben_plain_02@synthetic.test>
+Authentication-Results: mx.example.net; spf=pass; dkim=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Track it at https://shop.fabrikam-edu.example.org/track/123

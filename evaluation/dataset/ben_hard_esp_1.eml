@@ -1,0 +1,14 @@
+From: Billing <billing@contoso-labs.example.org>
+To: user@example.org
+Subject: Invoice available - pay now
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <ben_hard_esp_1@synthetic.test>
+Authentication-Results: mx.example.net; spf=pass; dkim=pass; dmarc=pass
+Reply-To: support@helpdesk-platform.example.net
+Return-Path: bounce@mailer-platform.example.net
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Your invoice is ready. Pay now via the portal: https://pay.contoso-labs.examp=
+le.org/inv/101

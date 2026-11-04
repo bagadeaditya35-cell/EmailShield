@@ -1,0 +1,12 @@
+From: Accounts <no-reply@accounts.google.com>
+To: user@example.org
+Subject: Password reset requested
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <ben_hard_reset_1@synthetic.test>
+Authentication-Results: mx.example.net; spf=pass; dkim=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Someone asked to reset your password. If this was you, log in at https://acco=
+unts.google.com/reset and verify your account. Urgent if not you.

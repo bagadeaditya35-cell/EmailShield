@@ -1,0 +1,14 @@
+{
+  "_comment": "Fill these in ONLY after you actually did them, on real systems. scripts/release_check.py reads this file; it cannot verify the claims, so do not set true without evidence (paste summaries in 'notes').",
+  "pytest_real_run": false,
+  "pytest_summary": "",
+  "windows_build_done": false,
+  "installer_tested_clean_machine": false,
+  "upgrade_tested": false,
+  "uninstall_tested": false,
+  "gmail_live_tested": false,
+  "two_accounts_live_tested": false,
+  "splunk_live_tested": false,
+  "benchmark_on_target_laptop": false,
+  "notes": ""
+}

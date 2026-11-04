@@ -1,0 +1,739 @@
+{
+ "version": "2.3.0",
+ "thresholds": {
+  "suspicious": 30,
+  "high": 70
+ },
+ "stats": {
+  "Suspicious or higher (score >= 30)": {
+   "tp": 23,
+   "fp": 6,
+   "tn": 21,
+   "fn": 6,
+   "precision": 0.7931034482758621,
+   "recall": 0.7931034482758621,
+   "f1": 0.7931034482758621,
+   "false_positive_rate": 0.2222222222222222,
+   "accuracy": 0.7857142857142857
+  },
+  "High risk only (score >= 70)": {
+   "tp": 9,
+   "fp": 0,
+   "tn": 27,
+   "fn": 20,
+   "precision": 1.0,
+   "recall": 0.3103448275862069,
+   "f1": 0.4736842105263158,
+   "false_positive_rate": 0.0,
+   "accuracy": 0.6428571428571429
+  }
+ },
+ "samples": [
+  {
+   "file": "ben_plain_00.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 3.846953000000042,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_01.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 2.0696799999981863,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_02.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 2.214723000001584,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_03.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 1.7456010000032052,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_04.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 2.1730859999991026,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_05.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 1.7643429999978366,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_06.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 2.1463600000046767,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_07.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 1.8050910000013687,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_08.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 2.1652080000009732,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_09.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 1.752920999997798,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_10.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 2.3120350000027656,
+   "findings": []
+  },
+  {
+   "file": "ben_plain_11.eml",
+   "label": 0,
+   "tag": "ordinary",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 1.7671339999978386,
+   "findings": []
+  },
+  {
+   "file": "ben_hard_reset_0.eml",
+   "label": 0,
+   "tag": "hard-negative: legit password reset",
+   "score": 23,
+   "category": "Low risk",
+   "ms": 1.398018999999806,
+   "findings": [
+    "kw_credentials",
+    "kw_urgency"
+   ]
+  },
+  {
+   "file": "ben_hard_reset_1.eml",
+   "label": 0,
+   "tag": "hard-negative: legit password reset",
+   "score": 23,
+   "category": "Low risk",
+   "ms": 1.511496999995643,
+   "findings": [
+    "kw_credentials",
+    "kw_urgency"
+   ]
+  },
+  {
+   "file": "ben_hard_reset_2.eml",
+   "label": 0,
+   "tag": "hard-negative: legit password reset",
+   "score": 23,
+   "category": "Low risk",
+   "ms": 1.4190710000008266,
+   "findings": [
+    "kw_credentials",
+    "kw_urgency"
+   ]
+  },
+  {
+   "file": "ben_hard_esp_0.eml",
+   "label": 0,
+   "tag": "hard-negative: billing via mail platform",
+   "score": 35,
+   "category": "Suspicious",
+   "ms": 2.390675000000897,
+   "findings": [
+    "reply_to_mismatch",
+    "kw_payment",
+    "return_path_mismatch"
+   ]
+  },
+  {
+   "file": "ben_hard_esp_1.eml",
+   "label": 0,
+   "tag": "hard-negative: billing via mail platform",
+   "score": 35,
+   "category": "Suspicious",
+   "ms": 2.344671999999548,
+   "findings": [
+    "reply_to_mismatch",
+    "kw_payment",
+    "return_path_mismatch"
+   ]
+  },
+  {
+   "file": "ben_hard_esp_2.eml",
+   "label": 0,
+   "tag": "hard-negative: billing via mail platform",
+   "score": 35,
+   "category": "Suspicious",
+   "ms": 2.3745680000004654,
+   "findings": [
+    "reply_to_mismatch",
+    "kw_payment",
+    "return_path_mismatch"
+   ]
+  },
+  {
+   "file": "ben_hard_esp_3.eml",
+   "label": 0,
+   "tag": "hard-negative: billing via mail platform",
+   "score": 35,
+   "category": "Suspicious",
+   "ms": 2.3481439999955,
+   "findings": [
+    "reply_to_mismatch",
+    "kw_payment",
+    "return_path_mismatch"
+   ]
+  },
+  {
+   "file": "ben_hard_fwd_0.eml",
+   "label": 0,
+   "tag": "hard-negative: forwarded mail failing SPF/DKIM",
+   "score": 22,
+   "category": "Low risk",
+   "ms": 1.9497850000007588,
+   "findings": [
+    "spf_fail",
+    "dkim_fail"
+   ]
+  },
+  {
+   "file": "ben_hard_fwd_1.eml",
+   "label": 0,
+   "tag": "hard-negative: forwarded mail failing SPF/DKIM",
+   "score": 22,
+   "category": "Low risk",
+   "ms": 1.883505999998647,
+   "findings": [
+    "spf_fail",
+    "dkim_fail"
+   ]
+  },
+  {
+   "file": "ben_hard_fwd_2.eml",
+   "label": 0,
+   "tag": "hard-negative: forwarded mail failing SPF/DKIM",
+   "score": 22,
+   "category": "Low risk",
+   "ms": 2.9932790000017917,
+   "findings": [
+    "spf_fail",
+    "dkim_fail"
+   ]
+  },
+  {
+   "file": "ben_hard_att_0.eml",
+   "label": 0,
+   "tag": "hard-negative: macro/zip attachments from colleague",
+   "score": 35,
+   "category": "Suspicious",
+   "ms": 2.985830000000078,
+   "findings": [
+    "att_macro",
+    "kw_payment",
+    "kw_urgency"
+   ]
+  },
+  {
+   "file": "ben_hard_att_1.eml",
+   "label": 0,
+   "tag": "hard-negative: macro/zip attachments from colleague",
+   "score": 35,
+   "category": "Suspicious",
+   "ms": 2.9243619999945736,
+   "findings": [
+    "att_macro",
+    "kw_payment",
+    "kw_urgency"
+   ]
+  },
+  {
+   "file": "ben_hard_att_2.eml",
+   "label": 0,
+   "tag": "hard-negative: macro/zip attachments from colleague",
+   "score": 28,
+   "category": "Low risk",
+   "ms": 2.912313999999583,
+   "findings": [
+    "kw_payment",
+    "kw_urgency",
+    "att_archive"
+   ]
+  },
+  {
+   "file": "ben_hard_short.eml",
+   "label": 0,
+   "tag": "hard-negative: shortener link",
+   "score": 8,
+   "category": "Low risk",
+   "ms": 2.0206959999953256,
+   "findings": [
+    "url_shortener"
+   ]
+  },
+  {
+   "file": "ben_hard_noauth.eml",
+   "label": 0,
+   "tag": "hard-negative: exported without auth headers",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 1.702695999995285,
+   "findings": []
+  },
+  {
+   "file": "mal_lookalike_0.eml",
+   "label": 1,
+   "tag": "easy: lookalike domain phish",
+   "score": 100,
+   "category": "High risk",
+   "ms": 1.4947779999943123,
+   "findings": [
+    "sender_lookalike_domain",
+    "url_lookalike_domain",
+    "display_name_impersonation",
+    "dmarc_fail",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency",
+    "url_http"
+   ]
+  },
+  {
+   "file": "mal_lookalike_1.eml",
+   "label": 1,
+   "tag": "easy: lookalike domain phish",
+   "score": 100,
+   "category": "High risk",
+   "ms": 1.5335540000052106,
+   "findings": [
+    "sender_lookalike_domain",
+    "url_lookalike_domain",
+    "display_name_impersonation",
+    "dmarc_fail",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency",
+    "url_http"
+   ]
+  },
+  {
+   "file": "mal_lookalike_2.eml",
+   "label": 1,
+   "tag": "easy: lookalike domain phish",
+   "score": 100,
+   "category": "High risk",
+   "ms": 1.8405670000021246,
+   "findings": [
+    "sender_lookalike_domain",
+    "url_lookalike_domain",
+    "display_name_impersonation",
+    "dmarc_fail",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency",
+    "url_http"
+   ]
+  },
+  {
+   "file": "mal_lookalike_3.eml",
+   "label": 1,
+   "tag": "easy: lookalike domain phish",
+   "score": 100,
+   "category": "High risk",
+   "ms": 2.094279999994342,
+   "findings": [
+    "sender_lookalike_domain",
+    "url_lookalike_domain",
+    "display_name_impersonation",
+    "dmarc_fail",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency",
+    "url_http"
+   ]
+  },
+  {
+   "file": "mal_lookalike_4.eml",
+   "label": 1,
+   "tag": "easy: lookalike domain phish",
+   "score": 100,
+   "category": "High risk",
+   "ms": 2.0117900000045097,
+   "findings": [
+    "sender_lookalike_domain",
+    "url_lookalike_domain",
+    "display_name_impersonation",
+    "dmarc_fail",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency",
+    "url_http"
+   ]
+  },
+  {
+   "file": "mal_lookalike_5.eml",
+   "label": 1,
+   "tag": "easy: lookalike domain phish",
+   "score": 100,
+   "category": "High risk",
+   "ms": 1.7993510000025026,
+   "findings": [
+    "sender_lookalike_domain",
+    "url_lookalike_domain",
+    "display_name_impersonation",
+    "dmarc_fail",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency",
+    "url_http"
+   ]
+  },
+  {
+   "file": "mal_ip_0.eml",
+   "label": 1,
+   "tag": "easy: IP-address link",
+   "score": 91,
+   "category": "High risk",
+   "ms": 2.3717330000039283,
+   "findings": [
+    "url_ip_host",
+    "dmarc_fail",
+    "sender_brand_in_domain",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency",
+    "url_http"
+   ]
+  },
+  {
+   "file": "mal_ip_1.eml",
+   "label": 1,
+   "tag": "easy: IP-address link",
+   "score": 91,
+   "category": "High risk",
+   "ms": 2.3574310000000764,
+   "findings": [
+    "url_ip_host",
+    "dmarc_fail",
+    "sender_brand_in_domain",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency",
+    "url_http"
+   ]
+  },
+  {
+   "file": "mal_ip_2.eml",
+   "label": 1,
+   "tag": "easy: IP-address link",
+   "score": 91,
+   "category": "High risk",
+   "ms": 2.3440020000009554,
+   "findings": [
+    "url_ip_host",
+    "dmarc_fail",
+    "sender_brand_in_domain",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency",
+    "url_http"
+   ]
+  },
+  {
+   "file": "mal_exe_0.eml",
+   "label": 1,
+   "tag": "easy: double-extension executable",
+   "score": 37,
+   "category": "Suspicious",
+   "ms": 2.909277999997073,
+   "findings": [
+    "att_double_ext",
+    "kw_payment"
+   ]
+  },
+  {
+   "file": "mal_exe_1.eml",
+   "label": 1,
+   "tag": "easy: double-extension executable",
+   "score": 37,
+   "category": "Suspicious",
+   "ms": 3.583527000003528,
+   "findings": [
+    "att_double_ext",
+    "kw_payment"
+   ]
+  },
+  {
+   "file": "mal_exe_2.eml",
+   "label": 1,
+   "tag": "easy: double-extension executable",
+   "score": 37,
+   "category": "Suspicious",
+   "ms": 2.825070000000096,
+   "findings": [
+    "att_double_ext",
+    "kw_payment"
+   ]
+  },
+  {
+   "file": "mal_disguised_0.eml",
+   "label": 1,
+   "tag": "medium: executable disguised as PDF",
+   "score": 30,
+   "category": "Suspicious",
+   "ms": 2.907988000004025,
+   "findings": [
+    "att_type_mismatch"
+   ]
+  },
+  {
+   "file": "mal_disguised_1.eml",
+   "label": 1,
+   "tag": "medium: executable disguised as PDF",
+   "score": 30,
+   "category": "Suspicious",
+   "ms": 3.3429070000039474,
+   "findings": [
+    "att_type_mismatch"
+   ]
+  },
+  {
+   "file": "mal_mismatch_0.eml",
+   "label": 1,
+   "tag": "medium: mismatched link text, clean auth",
+   "score": 37,
+   "category": "Suspicious",
+   "ms": 3.7972900000013965,
+   "findings": [
+    "link_text_mismatch",
+    "kw_credentials"
+   ]
+  },
+  {
+   "file": "mal_mismatch_1.eml",
+   "label": 1,
+   "tag": "medium: mismatched link text, clean auth",
+   "score": 37,
+   "category": "Suspicious",
+   "ms": 3.707290000001251,
+   "findings": [
+    "link_text_mismatch",
+    "kw_credentials"
+   ]
+  },
+  {
+   "file": "mal_mismatch_2.eml",
+   "label": 1,
+   "tag": "medium: mismatched link text, clean auth",
+   "score": 37,
+   "category": "Suspicious",
+   "ms": 3.7072410000007494,
+   "findings": [
+    "link_text_mismatch",
+    "kw_credentials"
+   ]
+  },
+  {
+   "file": "mal_mismatch_3.eml",
+   "label": 1,
+   "tag": "medium: mismatched link text, clean auth",
+   "score": 37,
+   "category": "Suspicious",
+   "ms": 3.7263870000003863,
+   "findings": [
+    "link_text_mismatch",
+    "kw_credentials"
+   ]
+  },
+  {
+   "file": "mal_replyto_0.eml",
+   "label": 1,
+   "tag": "medium: reply-to hijack with urgency",
+   "score": 68,
+   "category": "Suspicious",
+   "ms": 1.9291889999948353,
+   "findings": [
+    "reply_to_mismatch",
+    "dmarc_fail",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency"
+   ]
+  },
+  {
+   "file": "mal_replyto_1.eml",
+   "label": 1,
+   "tag": "medium: reply-to hijack with urgency",
+   "score": 68,
+   "category": "Suspicious",
+   "ms": 1.9135820000002468,
+   "findings": [
+    "reply_to_mismatch",
+    "dmarc_fail",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency"
+   ]
+  },
+  {
+   "file": "mal_replyto_2.eml",
+   "label": 1,
+   "tag": "medium: reply-to hijack with urgency",
+   "score": 68,
+   "category": "Suspicious",
+   "ms": 1.855773999999144,
+   "findings": [
+    "reply_to_mismatch",
+    "dmarc_fail",
+    "kw_credentials",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency"
+   ]
+  },
+  {
+   "file": "mal_macro_0.eml",
+   "label": 1,
+   "tag": "medium: macro document with pressure",
+   "score": 53,
+   "category": "Suspicious",
+   "ms": 3.1520729999954256,
+   "findings": [
+    "dmarc_fail",
+    "att_macro",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency"
+   ]
+  },
+  {
+   "file": "mal_macro_1.eml",
+   "label": 1,
+   "tag": "medium: macro document with pressure",
+   "score": 53,
+   "category": "Suspicious",
+   "ms": 2.8252829999999562,
+   "findings": [
+    "dmarc_fail",
+    "att_macro",
+    "spf_fail",
+    "dkim_fail",
+    "kw_urgency"
+   ]
+  },
+  {
+   "file": "mal_hard_giftcard.eml",
+   "label": 1,
+   "tag": "hard-positive: BEC gift card, no links",
+   "score": 12,
+   "category": "Low risk",
+   "ms": 1.3838520000035714,
+   "findings": [
+    "kw_payment"
+   ]
+  },
+  {
+   "file": "mal_hard_cleanlink.eml",
+   "label": 1,
+   "tag": "hard-positive: compromised account, clean link",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 2.2298239999969383,
+   "findings": []
+  },
+  {
+   "file": "mal_hard_https_verify.eml",
+   "label": 1,
+   "tag": "hard-positive: new domain, HTTPS, calm wording",
+   "score": 15,
+   "category": "Low risk",
+   "ms": 2.19363699999775,
+   "findings": [
+    "kw_credentials"
+   ]
+  },
+  {
+   "file": "mal_hard_callback.eml",
+   "label": 1,
+   "tag": "hard-positive: callback phishing, no link",
+   "score": 12,
+   "category": "Low risk",
+   "ms": 1.8069809999943232,
+   "findings": [
+    "kw_payment"
+   ]
+  },
+  {
+   "file": "mal_hard_qr.eml",
+   "label": 1,
+   "tag": "hard-positive: QR-code image only",
+   "score": 0,
+   "category": "Low risk",
+   "ms": 2.8391749999983062,
+   "findings": []
+  },
+  {
+   "file": "mal_hard_zip_pw.eml",
+   "label": 1,
+   "tag": "hard-positive: password-protected archive",
+   "score": 23,
+   "category": "Low risk",
+   "ms": 2.853430000001822,
+   "findings": [
+    "kw_credentials",
+    "att_archive"
+   ]
+  }
+ ]
+}

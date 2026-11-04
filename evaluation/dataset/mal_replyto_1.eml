@@ -1,0 +1,12 @@
+From: HR <hr@contoso-labs.example.org>
+To: user@example.org
+Subject: Urgent: salary revision
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <mal_replyto_1@synthetic.test>
+Authentication-Results: mx.example.net; spf=fail; dkim=fail; dmarc=fail
+Reply-To: collect1@mail-collector.example.net
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+Act now and confirm your account to receive the revised salary.

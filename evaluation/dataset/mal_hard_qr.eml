@@ -1,0 +1,24 @@
+From: Security <security@staff-portal.example.net>
+To: user@example.org
+Subject: Scan to re-enable access
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <mal_hard_qr@synthetic.test>
+Authentication-Results: mx.example.net; spf=pass; dkim=pass; dmarc=pass
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============7048755772062522309=="
+
+--===============7048755772062522309==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Scan the attached code.
+
+--===============7048755772062522309==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="code.png"
+MIME-Version: 1.0
+
+iVBORw0KGgpTWU5USEVUSUM=
+
+--===============7048755772062522309==--

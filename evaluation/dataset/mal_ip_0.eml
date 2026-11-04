@@ -1,0 +1,12 @@
+From: Bank Alerts <alerts@sbi-kyc-update.top>
+To: user@example.org
+Subject: KYC update immediately
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <mal_ip_0@synthetic.test>
+Authentication-Results: mx.example.net; spf=fail; dkim=fail; dmarc=fail
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Update your details now: http://203.0.113.10/kyc.php and enter OTP and card n=
+umber.

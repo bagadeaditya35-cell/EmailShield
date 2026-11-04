@@ -1,0 +1,24 @@
+From: Reports <reports@supplier.example.com>
+To: user@example.org
+Subject: Monthly report
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <mal_disguised_1@synthetic.test>
+Authentication-Results: mx.example.net; spf=pass; dkim=pass; dmarc=pass
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============4929083790483110547=="
+
+--===============4929083790483110547==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Report attached.
+
+--===============4929083790483110547==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="report1.pdf"
+MIME-Version: 1.0
+
+TVqQAFNZTlRIRVRJQy1QRS1NQVJLRVI=
+
+--===============4929083790483110547==--

@@ -1,0 +1,77 @@
+EMAILSHIELD INVESTIGATION REPORT ES-20261028184139-1  (INV-00001)
+================================================================
+Generated: 2026-10-28T18:41:39+00:00   Analyzed: 2026-10-28T18:41:39+00:00   Status: investigating
+
+METADATA
+  subject: Action required: salary revision
+  from_name: HR Desk
+  from_addr: hr@payroll-portal.example.net
+  reply_to_addr: collect@mail-collector.example.net
+  return_path_addr: 
+  date: Tue, 27 Oct 2026 09:30:00 +0530
+  message_id: <05_campaign_a@synthetic.test>
+  received_hops: 0
+  auth: {'spf': 'fail', 'dkim': 'fail', 'dmarc': 'fail'}
+  raw_sha256: e6abdeac93ee6a1ccd07d61ce3ad786f90119264200f3e7c2d9746c8bb247c8c
+
+RISK: Suspicious (heuristic score 53/100)
+  Heuristic score - not a probability. A low score does not prove an email is safe.
+
+FINDINGS
+  [MEDIUM +15] DMARC check failed (dmarc_fail)
+      Why: DMARC alignment failed, so the From domain is not verified as the true sender.
+      Evidence: dmarc=fail
+      Next step: Review the full Received chain and authentication headers in the original message.
+  [MEDIUM +15] Credential/login request language (kw_credentials)
+      Why: Requests involving credentials or identity verification. Legitimate mail also uses these words, so context matters.
+      Evidence: confirm your account
+      Evidence: login
+      Next step: If a recipient entered credentials, reset them and review account sign-in activity.
+  [MEDIUM +12] SPF check did not pass (spf_fail)
+      Why: The sending server was not authorized by the sender domain's SPF record.
+      Evidence: spf=fail
+      Next step: Review the full Received chain and authentication headers in the original message.
+  [MEDIUM +10] DKIM check failed (dkim_fail)
+      Why: The DKIM signature did not validate; the message may be forged or altered.
+      Evidence: dkim=fail
+      Next step: Review the full Received chain and authentication headers in the original message.
+  [LOW +8] Urgency language (kw_urgency)
+      Why: Pressure to act quickly is a common social-engineering tactic.
+      Evidence: action required
+      Next step: Contact the apparent sender through a separately verified channel before acting.
+
+INDICATORS
+  url: https://payroll-portal.example.net/review
+  url_domain: example.net
+  sender_addr: hr@payroll-portal.example.net
+  sender_domain: payroll-portal.example.net
+  reply_to_domain: mail-collector.example.net
+
+THREAT INTELLIGENCE
+  No external lookups were performed (local-only mode or not enabled).
+
+RELATED MESSAGES
+  INV-00002 Password expires within 24 hours - Shares sender domain: payroll-portal.example.net; Shares url: https://payroll-portal.example.net/review; Shares url domain: example.net
+  Note: Shared indicators suggest messages may be related; they are NOT proof of a common attacker.
+
+RECOMMENDED STEPS
+  1. Do not click links or open attachments on a production machine.
+  2. Review the full Received chain and authentication headers in the original message.
+  3. Contact the apparent sender through a separately verified channel before acting.
+  4. If a recipient entered credentials, reset them and review account sign-in activity.
+  5. Search the mailbox for related messages (see Related Emails) and note shared indicators.
+  6. Record your decision and reasoning in the investigation notes.
+
+INVESTIGATION NOTES
+  Synthetic demo: both messages link to payroll-portal.example.net; verify with HR by phone.
+
+HISTORY
+  2026-10-28T18:41:39+00:00 upload: created Suspicious score 53
+  2026-10-28T18:41:39+00:00 demo-analyst: status_changed new -> investigating
+  2026-10-28T18:41:39+00:00 demo-analyst: notes_updated 90 characters
+
+LIMITATIONS
+  - The risk score is a heuristic sum of rule weights, not a calibrated probability of compromise.
+  - A low score does NOT mean the email is safe; novel or well-crafted attacks may trigger no rule.
+  - No external threat-intelligence lookups were performed unless explicitly shown in this report.
+  - Attachment contents were not opened or scanned; only metadata and SHA-256 were recorded.

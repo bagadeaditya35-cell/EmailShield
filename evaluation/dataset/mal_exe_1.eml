@@ -1,0 +1,23 @@
+From: Accounts <billing@vendor-pay.example.net>
+To: user@example.org
+Subject: Invoice overdue - pay now
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <mal_exe_1@synthetic.test>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============6710419415472755542=="
+
+--===============6710419415472755542==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Invoice attached. Payment overdue.
+
+--===============6710419415472755542==
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="invoice_1.pdf.exe"
+MIME-Version: 1.0
+
+U1lOVEhFVElDLU5PVC1SRUFMLU1BTFdBUkU=
+
+--===============6710419415472755542==--

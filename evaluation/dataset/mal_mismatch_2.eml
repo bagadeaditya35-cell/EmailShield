@@ -1,0 +1,25 @@
+From: IT Desk <it@fabrikam-edu-portal.example.net>
+To: user@example.org
+Subject: Sign in to keep your mailbox
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <mal_mismatch_2@synthetic.test>
+Authentication-Results: mx.example.net; spf=pass; dkim=pass; dmarc=pass
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="===============2416902405886441770=="
+
+--===============2416902405886441770==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Your mailbox needs verification.
+
+--===============2416902405886441770==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<p>Verify now:</p><a href=3D"https://secure-login.fabrikam-edu-portal.example=
+.net/verify">https://mail.fabrikam-edu.example.org/signin</a>
+
+--===============2416902405886441770==--

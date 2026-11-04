@@ -1,0 +1,11 @@
+From: Neha <neha@adatum-corp.example.org>
+To: user@example.org
+Subject: Weekly newsletter
+Date: Tue, 27 Oct 2026 09:30:00 +0530
+Message-ID: <ben_plain_04@synthetic.test>
+Authentication-Results: mx.example.net; spf=pass; dkim=pass; dmarc=pass
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+News from the team. Read more at https://www.adatum-corp.example.org/news

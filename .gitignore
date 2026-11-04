@@ -1,0 +1,53 @@
+# secrets and private data: NEVER commit
+data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.bak
+backups/
+secrets.json
+api_key.txt
+gmail_token.json
+client_secret*.json
+.env
+*.pem
+*.pfx
+*.key
+*.log
+# build output and environments
+venv/
+venv*/
+build/
+dist/
+dist_*/
+__pycache__/
+*.pyc
+.pytest_cache/
+requirements.lock.txt.local
+# generated samples (regenerate with scripts/generate_samples.py)
+samples/*.eml
+pytest-junit.xml
+pytest-report.md
+
+# Additional public-repository safety exclusions
+.env.*
+!.env.example
+*.sqlite*
+*.log
+*token*.json
+*client_secret*.json
+credentials/
+secrets/
+*.p12
+*.pfx
+*.key
+*.pem
+
+# Local runtime and generated artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
